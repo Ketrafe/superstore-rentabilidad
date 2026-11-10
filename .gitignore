@@ -4,3 +4,4 @@ data/*.db
 .ipynb_checkpoints/
 __pycache__/
 .venv/
+reports/ventas_limpio.csv
