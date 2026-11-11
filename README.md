@@ -41,6 +41,7 @@ Dataset de ejemplo **Superstore Sales**: [Kaggle](https://www.kaggle.com/dataset
 2. Cálculo de KPI: ventas, utilidad, margen, pedidos y ticket promedio.
 3. Rentabilidad por categoría, sub-categoría, región, producto y tramo de descuento.
 4. Simulación de escenarios de política de descuentos con análisis de sensibilidad.
+5. Validación Cruzada: las mismas métricas se replican en SQL (SQLite) con resultados coincidentes (sql/consultas.sql ; resultados en reports/resultados_sql.md)
 
 ## Cómo reproducirlo
 ```bash
@@ -52,14 +53,13 @@ python -m notebook notebooks/01_analisis_rentabilidad.ipynb
 ## Estructura
 ```
 notebooks/   análisis narrado
-sql/         consultas de negocio (en desarrollo)
-src/         carga a SQLite
+sql/         consultas de negocio (en SQLite)
+src/         carga a SQLite y ejecución de consultas
 reports/     gráficos y tablas resumen
 dashboards/  capturas o PDF de Power BI (próximamente)
 ```
 
 ## Próximos pasos
-- Replicar el análisis en SQL (`sql/consultas.sql`).
 - Construir un dashboard ejecutivo en Power BI con las tablas de `reports/`.
 
 ## Autor
